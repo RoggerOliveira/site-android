@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype') ;
+    font-weight: normal; 
+}
+
+    :root{
+        /*Cores*/
+        --cor0: #c5ebd6;
+        --cor1: #83e1ad;
+        --cor2: #3ddc84;
+        --cor3: #2fa866;
+        --cor4: #1a5c37;
+        --cor5: #063d1e;
+
+        /*Fontes*/
+        --fonte-padrao: Arial, Helvetica, sans-serif;
+        --fonte-destaque: 'Bebas Neue', cursive;
+        --fonte-andoid: 'idroid', cursive; 
+
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    body{
+        background-color: oklch(94.812% 0.05168 116.867);
+        font-family: var(--fonte-padrao);
+
+        min-width: 280px;        
+    }
+
+        header{
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)) ;
+    }
+
+    header h1{
+        text-size-adjust: 2em;
+        color: white;
+        font-family: var(--fonte-destaque);
+        font-size: 2.6em;
+        font-weight: normal;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    header h2{
+        font-size: 1.5em;
+        color: white;
+        font-weight: normal;
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    nav {
+        padding: 10px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+    }
+
+    nav a{
+        color: var(--cor1);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        transition-duration: 0.5s;
+    }
+
+    nav a:hover{
+        background-color: var(--cor4);
+        color: var(--cor1);
+    }
+
+    a.externo::after{
+        content: '\1F517';
+    }
+
+    main{
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
+
+        min-width: 280px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    main a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--cor4);
+        background-color: var(--cor1);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    main h1{
+        font-family: var(--fonte-andoid);
+        color: #063d1e;
+
+    }
+
+    main h2{
+        font-family: var(--fonte-andoid);
+        color: var(--cor4);
+        background-image: linear-gradient(to right, var(--cor1), white);
+        padding-left: 5px;
+    }
+
+    main a:hover{
+        text-decoration: underline;
+    }
+
+    main strong{
+        color: var(--cor4);
+    }
+
+    main p{
+        text-indent: 25px;
+        line-height: 2em;
+    }
+
+    main img{
+        width: 100%;
+    }
+
+    main img.pequena{
+        display: block;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    aside{
+        margin-top: 5px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--cor0);
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.342) ;
+    } 
+
+    aside > h3{
+        background-color: var(--cor4);
+        color: white;
+        padding: 10px;
+        margin: -20px -20px 0px -20px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+    
+    aside > ul{
+        list-style-position: inside;
+        columns: 2;
+        list-style-type: '\1F5F8\00A0';
+    }
+
+    div.video {
+              
+        background-color: #1a5c37;
+        margin: 0px -20px;
+
+        padding-bottom: 50%;
+        position: relative;
+    }
+
+    div.video > iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+   
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        
+
+    }
+
+        
+    div#bola{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(5, 5, 5);
+        margin: auto;
+        /*Pode usar tanto "%" ou "px"*/
+        border-radius: 50px;
+    }
